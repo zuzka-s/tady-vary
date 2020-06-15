@@ -530,7 +530,7 @@ div.platformy img {
     color: #000000;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     margin : 1em 0;
     width: 16%;
     height: 180px;
