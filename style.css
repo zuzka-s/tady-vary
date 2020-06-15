@@ -552,7 +552,7 @@ div.platformy img {
 }
 
 .vote.v1:hover {
-    background-image: url("/images/filmy/test2.png");
+    background-image: url("images/filmy/test2.png");
     height: 140px;
     transition: 0.3s;
     width: 100%;
@@ -563,7 +563,7 @@ div.platformy img {
 }
 
 .vote.v2:hover {
-    background-image: url("/images/filmy/test2.png");
+    background-image: url("images/filmy/test2.png");
     height: 140px;
     transition: 0.3s;
     width: 100%;
@@ -572,7 +572,7 @@ div.platformy img {
     height: 100px;
 }
 .vote.v3:hover {
-    background-image: url("/images/filmy/test2.png");
+    background-image: url("images/filmy/test2.png");
     height: 140px;
     transition: 0.3s;
     width: 100%;
@@ -582,7 +582,7 @@ div.platformy img {
     height: 80px;
 }
 .vote.v4:hover {
-    background-image: url("/images/filmy/test2.png");
+    background-image: url("images/filmy/test2.png");
     height: 140px;
     transition: 0.3s;
     width: 100%;
@@ -592,7 +592,7 @@ div.platformy img {
     height: 60px;
 }
 .vote.v5:hover {
-    background-image: url("/images/filmy/test2.png");
+    background-image: url("images/filmy/test2.png");
     height: 140px;
     transition: 0.3s;
     width: 100%;
@@ -602,7 +602,7 @@ div.platformy img {
     height: 40px;
 }
 .vote.v6:hover {
-    background-image: url("/images/filmy/test2.png");
+    background-image: url("images/filmy/test2.png");
     height: 140px;
     transition: 0.3s;
     width: 100%;
