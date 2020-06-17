@@ -67,7 +67,9 @@ img.logo {
     color: #000000;
     border: 10px solid #000000;
     border-radius: 10px;
-    margin: 0 50px;
+    max-width: 1500px;
+    width: 90vw;
+    margin: auto;
 }
 #movie-section.section.skewed {
     background: white;
@@ -85,57 +87,46 @@ img.logo {
 }
 #placement-of-movies a.button {
     display: inline-block;
-    color: white;
+    color: #FF0000;
     font-size: 16px;
     text-decoration: underline;
     line-height: 1.2;
     margin-top: 5px;
-}
-#placement-of-movies a.button:hover {
     text-decoration: none;
 }
+#placement-of-movies a.button:hover {
+    border-bottom: 2px #FF0000 solid;  
+}
 @media screen and (min-width: 768px) {
-    #placement-of-movies .pom-wrap:nth-child(3n+3) .pom-box {
+    #placement-of-movies .pom-wrap:nth-child(3n+3) .pom-placement {
         margin-top: 30px;
     }  
-    #placement-of-movies .pom-wrap:nth-child(3n+1) .pom-box {
+    #placement-of-movies .pom-wrap:nth-child(3n+1) .pom-placement {
         margin-top: 60px;
     } 
 } 
-.pom-box.first .pom-img {
-border: 2px solid #ffbf00;
-}
-.pom-box.second .pom-img {
-border: 2px solid #d7d7d7;    
-}
-.pom-box.third .pom-img {
-border: 2px solid #ffa247;     
-}
+
 .pom-box.first,.pom-box.second,.pom-box.third {
-    background-color: #1d95edab;
+    border: 3px black solid;
+    border-radius: 10px;
 }
-.pom-box.first .pom-placement {
-color: #ffbf00;
-font-weight: bold;
-}
-.pom-box.second .pom-placement {
-color: #d7d7d7; 
-font-weight: bold; 
-}
-.pom-box.third .pom-placement {
-color: #ffa247; 
-font-weight: bold;  
-}
+
 .pomb-link {
     display: block;
 }
 .pom-box {
     display: flex;
     flex-wrap: wrap;
-    padding: 4px 10px 10px;
+    padding: 0px 10px 0px 0px;
+    overflow: hidden;
+    height: 125px;
+}
+.pom-placement {
+   display: block;
 }
 .pom-placement, .pom-img {
     width: 100%;
+    border-radius: 6px;
 }
 .pom-img-wrap, .pom-text {
     width: 50%;
@@ -145,6 +136,8 @@ font-weight: bold;
         background-position: center center;
         display: block;
         position: relative;
+        filter: grayscale();
+        height: 100%;
 }
 .pom-img .inner {
     position: relative;
@@ -160,7 +153,7 @@ font-weight: bold;
 .pom-box .play {
     width: 50px;
     height: 50px;
-    background: #113dad url(images/play.png) no-repeat;
+    background: #797979 url(images/play2.png) no-repeat;
     background-size: 50% 50%;
     background-position: center center; 
     position: absolute;
@@ -173,6 +166,10 @@ font-weight: bold;
 }
 .pom-box:hover .play {
     opacity: 1;
+}
+
+.pom-box:hover .pom-img {
+   filter: none;
 }
 .pom-text h3 {
     font-size: 24px;
@@ -517,101 +514,6 @@ div.platformy img {
     .em-cont{max-height:none;}
 }
 
-/*----------------------------- Films votes -------------------------*/
-.film-voting {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-}
-.vote-box {
-    display: flex;
-    color: #000000;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin : 1em 0;
-    width: 16%;
-    height: 180px;
-}
-
-.vote {
-    display: flex;
-    color: #ffffff;
-    border-radius: 9px;
-    width: 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #000000;
-}
-
-.vote.v1 {
-    height: 140px;
-}
-
-.vote.v1:hover {
-    background-image: url("images/filmy/test2.png");
-    height: 140px;
-    transition: 0.3s;
-    width: 100%;
-}
-
-.vote.v2 {
-    height: 120px;
-}
-
-.vote.v2:hover {
-    background-image: url("images/filmy/test2.png");
-    height: 140px;
-    transition: 0.3s;
-    width: 100%;
-}
-.vote.v3 {
-    height: 100px;
-}
-.vote.v3:hover {
-    background-image: url("images/filmy/test2.png");
-    height: 140px;
-    transition: 0.3s;
-    width: 100%;
-}
-
-.vote.v4 {
-    height: 80px;
-}
-.vote.v4:hover {
-    background-image: url("images/filmy/test2.png");
-    height: 140px;
-    transition: 0.3s;
-    width: 100%;
-}
-
-.vote.v5 {
-    height: 60px;
-}
-.vote.v5:hover {
-    background-image: url("images/filmy/test2.png");
-    height: 140px;
-    transition: 0.3s;
-    width: 100%;
-}
-
-.vote.v6 {
-    height: 40px;
-}
-.vote.v6:hover {
-    background-image: url("images/filmy/test2.png");
-    height: 140px;
-    transition: 0.3s;
-    width: 100%;
-}
-
-.vote-box:hover p {
-  text-decoration: none;
-  color: #000000;
-}
 
 
 
