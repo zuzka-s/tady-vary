@@ -85,7 +85,7 @@ img.logo {
     background: white;
     z-index: 2;
 }
-#placement-of-movies a.button {
+#placement-of-movies a.button, #placement-of-movies span.button {
     display: inline-block;
     color: #FF0000;
     font-size: 16px;
@@ -131,13 +131,22 @@ img.logo {
 .pom-img-wrap, .pom-text {
     width: 50%;
 }
+a.pom-link-box {
+            display: block;
+            text-decoration: none;
+            color: black;
+}
 .pom-img {
         background-size: cover;
         background-position: center center;
-        display: block;
+        display: inline-block;
         position: relative;
         filter: grayscale();
+        width: 100%;
         height: 100%;
+}
+#placement-of-movies .pom-box:hover span.button {
+    border-bottom: 2px #FF0000 solid;  
 }
 .pom-img .inner {
     position: relative;
