@@ -70,6 +70,7 @@ img.logo {
     max-width: 1500px;
     padding-bottom: 60px;
     width: 90vw;
+    max-width: 1250px;
     margin: 0 auto 25px auto;
 }
 #movie-section.section.skewed {
@@ -642,3 +643,156 @@ div.platformy img {
 .logo-box img.wide {
     max-width: 140px;
 }
+.schedule-wrap .schedule-days {
+    display: flex;
+}
+.schedule-wrap .schedule-days > div {
+    padding: 20px;
+} 
+.schedule-wrap .schedule-days .day {
+    font-size: 24px;
+    border-bottom: 2px solid black;
+}  
+.schedule-wrap .programme-box {
+    margin: 10px 0;
+}
+.schedule-wrap .programme-box span {
+    font-size: 16px;
+    display: block;
+    font-style: italic;
+    color: #202020;
+} 
+/* Carousel */
+.carousel-boxes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: 97%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 5px;
+  top: 20px;
+}
+
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-container .scroll-left,
+.carousel-container .scroll-right {
+  color: #dfdfdf;
+  padding: 0 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  z-index: 5;
+  border-radius: 50%;
+  -webkit-transition: background-color .15s ease-in-out;
+  transition: background-color .15s ease-in-out;
+  height: 90px;
+  width: 90px;
+  background-color: transparent;
+  text-decoration: none;
+}
+.carousel-container .scroll-left {
+  display: none;
+}
+.carousel-container .scroll-left:hover,
+.carousel-container .scroll-right:hover {
+  color: #d8d8d8;
+  background-color: rgba(18, 18, 18, 0.6);
+}
+
+.carousel-container .scroll-left {
+  left: -45px;
+  top: 50%;
+  margin-top: -45px;
+}
+
+.carousel-container .scroll-right {
+  right: -45px;
+  top: 50%;
+  margin-top: -45px;
+}
+
+.carousel-container .arrow {
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+  border: 0 solid #dfdfdf;
+  border-width: 0 0 3px 3px;
+}
+
+.carousel-container .scroll-right .arrow {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  left: -4px;
+}
+
+.carousel-container .scroll-left .arrow {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: -4px;
+}
+
+.carousel-hide-scrollbar-wrapper {
+  position: relative;
+  overflow: hidden;
+  /* width: 95%;
+            margin: 0 auto;*/
+}
+
+.carousel-hide-scrollbar-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(10%, #FFF), color-stop(30%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #FFF 10%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 100%);
+  z-index: 4;
+  pointer-events: none;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+@media screen and (max-width: 630px) {
+  .carousel-container .scroll-left {
+    left: -65px;
+  }
+  .carousel-container .scroll-right {
+    right: -65px;
+  }
+  .carousel-container .scroll-right .arrow {
+    left: -20px;
+  }
+  .carousel-container .scroll-left .arrow {
+    right: -20px;
+  }
+  .carousel-hide-scrollbar-wrapper::after {
+    width: 100px;
+  }
+} 
+
+.carousel-wrap {
+  width: 95%;
+  margin: 0 auto 40px auto;
+}
+    
