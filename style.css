@@ -68,6 +68,7 @@ img.logo {
     border: 10px solid #000000;
     border-radius: 10px;
     max-width: 1500px;
+    padding-bottom: 60px;
     width: 90vw;
     margin: 0 auto 25px auto;
 }
@@ -98,16 +99,16 @@ img.logo {
     border-bottom: 2px #FF0000 solid;  
 }
 @media screen and (min-width: 768px) {
-    #placement-of-movies .pom-wrap:nth-child(4n+3) .pom-placement {
-        margin-top: 25px;
-    }  
-    #placement-of-movies .pom-wrap:nth-child(4n+4) .pom-placement {
-        margin-top: 50px;
+    #placement-of-movies .pom-wrap:nth-child(3n+3) .pom-placement {
+            margin-top: 30px;
+    }        
+    #placement-of-movies .pom-wrap:nth-child(3n+1) .pom-placement {
+            margin-top: 60px;
     } 
-    #placement-of-movies .pom-wrap:nth-child(4n+5) .pom-placement {
-        margin-top: 75px;
-    }
 } 
+#placement-of-movies .pom-wrap:nth-child(n+5) {
+    display: none;
+}
 
 .pom-box.first,.pom-box.second,.pom-box.third {
     border: 3px black solid;
@@ -188,7 +189,7 @@ a.pom-link-box {
 }
 
 .movie-box {
-    padding: 30px 0;
+    padding: 50px 0;
 }
 .mb-head {
     text-align: center;
@@ -209,7 +210,7 @@ position: relative;
     border-bottom:3px solid #FF0000;
 }
 .mb-head h3 {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 35px;
 }
 /* other short */
@@ -558,7 +559,7 @@ div.platformy img {
     color: white;
     font-size: 2rem;
 }
-.open-video-overlay {
+.open-video-overlay, .show-all-placements {
     font-family: 'News Cycle', sans-serif;
     text-transform: uppercase;
     color: #000;
