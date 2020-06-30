@@ -30,18 +30,27 @@ h2 {
 }
 #head-stripe {
     background: #F8F8F8;
-    padding: 10px 0;
+    padding: 15px 0;
+    font-family: 'News Cycle', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 0;
+}
+#head-stripe .container {
+    display: flex;
 }
 #head-stripe a img {
-    filter: grayscale(100%);
-    opacity: .7;
-    transition: all .15s ease-in-out;
-    max-height: 15px;
     width: auto;
+    margin-left: 7px;
+    max-height: 20px;
+    display: block;
+    transition: transform 0.1s ease-out;
 }
 #head-stripe a img:hover {
-    filter: grayscale(0%);
-    opacity: 1;    
+    transform: scale(1.05);
+}
+#head-stripe .container div {
+    padding-top: 10px;
 }
 #header .container {
     text-align: center;
@@ -71,7 +80,7 @@ img.logo {
     padding-bottom: 60px;
     width: 90vw;
     max-width: 1250px;
-    margin: 0 auto 25px auto;
+    margin: 40px auto 25px auto;
 }
 #movie-section.section.skewed {
     background: white;
@@ -795,4 +804,9 @@ div.platformy img {
   width: 95%;
   margin: 0 auto 40px auto;
 }
-    
+div#other-short-movies, div#other-movies {
+    background: #F8F8F8;
+}    
+span.red {
+    color: #FF0000;
+}
