@@ -98,12 +98,15 @@ img.logo {
     border-bottom: 2px #FF0000 solid;  
 }
 @media screen and (min-width: 768px) {
-    #placement-of-movies .pom-wrap:nth-child(3n+3) .pom-placement {
-        margin-top: 30px;
+    #placement-of-movies .pom-wrap:nth-child(4n+3) .pom-placement {
+        margin-top: 25px;
     }  
-    #placement-of-movies .pom-wrap:nth-child(3n+1) .pom-placement {
-        margin-top: 60px;
+    #placement-of-movies .pom-wrap:nth-child(4n+4) .pom-placement {
+        margin-top: 50px;
     } 
+    #placement-of-movies .pom-wrap:nth-child(4n+5) .pom-placement {
+        margin-top: 75px;
+    }
 } 
 
 .pom-box.first,.pom-box.second,.pom-box.third {
