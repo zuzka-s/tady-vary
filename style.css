@@ -627,6 +627,32 @@ div.platformy img {
   width: 20%;
 }
 
+.logo-box.box-1 {
+    width: 90%;
+}
+.logo-box.velke {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-box.velke img{
+    max-width: 200px;
+}
+
+.logo-box.velke .mallcz{
+    max-width: 120px;
+}
+
+.logo-box.velke .malltv{
+    max-width: 120px;
+    margin-right: 60px;
+}
+
+.logo-box.box-1 img.wide {
+    max-width: 300px;
+}
+
 .logo-box img {
   max-width: 110px;
   margin: 10px;
@@ -635,6 +661,13 @@ div.platformy img {
 
 .logo-box img.wide {
   max-width: 170px;
+}
+
+.flex-loga {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
