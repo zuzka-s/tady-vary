@@ -633,7 +633,6 @@ div.platformy img {
 .logo-box.velke {
     width: 100%;
     margin: auto;
-    align-items: center;
 }
 
 .logo-box.velke img{
@@ -641,12 +640,11 @@ div.platformy img {
 }
 
 .logo-box.velke .mallcz{
-    max-width: 120px;
+    max-width: 140px;
 }
 
 .logo-box.velke .malltv{
     max-width: 120px;
-    margin-right: 60px;
 }
 
 .logo-box.box-1 img.wide {
