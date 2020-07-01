@@ -593,7 +593,7 @@ div.platformy img {
     background: black;
     padding-bottom: 40px;
 }
-#partners h2 {
+#partners h2, #partners h3 {
     color: white;
 }
 .logo-boxes {
