@@ -686,7 +686,7 @@ div.platformy img {
 .schedule-wrap .schedule-days {
     display: flex;
 }
-.schedule-wrap .schedule-days > div {
+.schedule-wrap .schedule-days > div,  .schedule-wrap .schedule-days > a {
     padding: 20px;
 } 
 .schedule-wrap .schedule-days .day {
@@ -694,6 +694,9 @@ div.platformy img {
     border-bottom: 2px solid black;
 }  
 .schedule-wrap .programme-box {
+    display: block;
+    color: black;
+    text-decoration: none;
     margin: 10px 0;
 }
 .schedule-wrap .programme-box span {
@@ -701,7 +704,14 @@ div.platformy img {
     display: block;
     font-style: italic;
     color: #202020;
-} 
+}
+.schedule-wrap .programme-box small.link {
+
+    color: #FF0000;
+}
+.schedule-wrap a.programme-box:hover small.link {
+    border-bottom: 2px #FF0000 solid;  
+}    
 /* Carousel */
 .carousel-boxes-container {
   display: -webkit-box;
