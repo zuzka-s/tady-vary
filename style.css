@@ -683,6 +683,9 @@ div.platformy img {
 .logo-box img.wide {
     max-width: 140px;
 }
+#schedule {
+    overflow-x: hidden;
+}
 .schedule-wrap .schedule-days {
     display: flex;
 }
